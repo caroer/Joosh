@@ -1,0 +1,18 @@
+html, body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+    max-width: 2560px;
+}
+
+h1, h2, h3, p {
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li:first-child{
+
+}
