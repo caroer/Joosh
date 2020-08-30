@@ -3,16 +3,84 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 300px;
     max-width: 2560px;
+    vertical-align: baseline;
 }
 
 h1, h2, h3, p {
     padding: 1rem;
 }
 
-nav ul {
+ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
-nav ul li:first-child{
+
+#logo {
+    margin: 2rem 0rem 1rem 2rem;
+}
+
+#nav_list {
+    display: flex;
+    margin: 0rem;
+    justify-content: space-between;
+    margin: 2rem 0rem 1rem 2rem;
+}
+
+#nav_list li {
+    padding: 0rem 3rem;
+    
+}
+
+a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_links:focus {
+    border-bottom: black solid;
+    outline: none;
+}
+
+.nav_links::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+    margin-top: .11rem;
+}
+
+.nav_links:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#active {
+    font-weight: 600;
+}
+
+header {
+    background: url("../img/industry.jpg") no-repeat;
+    background-size: cover;
+    height: 50rem;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(240, 205, 50);
+    -webkit-text-stroke: 1px rgb(128, 128, 128);
+    font-style: italic;
+    line-height: 7rem;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 
 }
